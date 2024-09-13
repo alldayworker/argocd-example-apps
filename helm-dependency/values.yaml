@@ -1,7 +1,27 @@
 wordpress:
-  wordpressPassword: foo
-  mariadb:
-    db:
-      password: bar
-    rootUser:
-      password: baz
+    wordpressPassword: ENC[AES256_GCM,data:fqeY,iv:KhX+xivP5/31uvkBB1/wwXoWjHGI6kcXObSJDBAJ7Tc=,tag:/eaNvNfXdqn88LQn8I9l0Q==,type:str]
+    mariadb:
+        db:
+            password: ENC[AES256_GCM,data:Z3HP,iv:Ehbz4qTHoWSqophVAyAGN58InFEjvWUO5IESD90UU/w=,tag:7TbgyR0or1VS3jmMKqSaMw==,type:str]
+        rootUser:
+            password: ENC[AES256_GCM,data:gs93,iv:I/lVLkfQsXilRWcNtROcFI7Rm6u8zGhTgvagADMwhLQ=,tag:iR3VRiuwG+GHkg7baIXGJA==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1gamdhqcyvg7hl6zdjhzl8ptp743cu4x2vhzwwe8rl0lyyuaezpeq23h6hl
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBMMk5rYjExQnRwZERBcTBU
+            c0pwd3hqSXMydFp2MWIzRGtOaThJSzZqd0dNCk9NSksyMHU0dXgzUzdjUnV4dEJE
+            TDdiT3FreUF0Mlp2QzA5ZzlJTkdYSTAKLS0tIERJVmlnc215dGgrcU9SNjVtNkYz
+            eFlJcWM5OXlGYWE4WFB6Y1FML1d2ZzAKyUFUmx6NJlVD0KbHO6sFLrLNpQZ01C4Q
+            uNasEdL0/Ls6qcWyuUwqU/hVcqRJh+eT97teDLK0nrIGxaFsp66TlA==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2024-09-13T14:43:01Z"
+    mac: ENC[AES256_GCM,data:/GIuEFKcZdk2ReXgDOxS3eL3ac6r0zGDmyZib7BxFpOfzPDa3mUpjpu3h+E38R8dJTkQstZcWRQ4LUC+dX70Etd3w5rk8YPotooAAuCYxFOlZfnC6uyW87o2Dm9BTT3peEqU3VzjUEFYlKQOOYMFU0GRUJzyEBI0Fc6wb0+jluI=,iv:XzkeCF4ouft2D4kJJGWdZmxf06iiBbnMWf/FbnOBang=,tag:cmg3PoIrCVU8r45gsRUXOw==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.9.0
