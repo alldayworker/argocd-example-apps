@@ -1,0 +1,7 @@
+wordpress:
+  wordpressPassword: 'ref+sops://secrets-sops.yaml#wordpress/wordpressPassword'
+  mariadb:
+    db:
+      password: bar
+    rootUser:
+      password: baz
