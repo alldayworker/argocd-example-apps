@@ -1,5 +1,5 @@
 wordpress:
-  wordpressPassword: 'ref+sops://secrets.sops.yaml#wordpress/wordpressPassword'
+  wordpressPassword: 'ref+sops://secrets.yaml#wordpress/wordpressPassword'
   mariadb:
     db:
       password: bar
